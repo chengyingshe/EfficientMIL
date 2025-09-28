@@ -1,0 +1,13 @@
+numpy
+pillow
+matplotlib
+scikit-learn
+pyyaml
+pandas
+scikit-image
+jupyterlab
+opencv-python
+tqdm
+wandb
+openslide-python
+torch
