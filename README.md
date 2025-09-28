@@ -1,26 +1,12 @@
 # EfficientMIL: Efficient Linear-Complexity MIL Method for WSI Classification
 
-PyTorch implementation of EfficientMIL models for whole slide image classification and analysis. This project extends the original DSMIL framework with various recurrent architectures including GRU, LSTM, Mamba, and TTT (Token-to-Token Transformer).
+## Summary
 
-## Overview
+Whole slide images (WSIs) classification represents a fundamental challenge in computational pathology, where multiple instance learning (MIL) has emerged as the dominant paradigm. Current state-of-the-art (SOTA) MIL methods rely on attention mechanisms, achieving good performance but requiring substantial computational resources due to quadratic complexity when processing hundreds of thousands of patches. To address this computational bottleneck, we introduce EfficientMIL, a novel linear-complexity MIL approach for WSIs classification with the patches selection module Adaptive Patches Selector (APS) that we designed, replacing the quadratic-complexity self-attention mechanisms in Transformer-based MIL methods with efficient sequence models including RNN-based GRU, LSTM, and State Space Model (SSM) Mamba. EfficientMIL achieves significant computational efficiency improvements while outperforming other MIL methods across multiple histopathology datasets. On TCGA-Lung dataset, EfficientMIL-Mamba achieved AUC of 0.976 and accuracy of 0.933, while on CAMELYON16 dataset, EfficientMIL-GRU achieved AUC of 0.990 and accuracy of 0.975, surpassing previous state-of-the-art methods. Extensive experiments demonstrate that APS is also more effective for patches selection than conventional selection strategies.
 
-This repository implements multiple recurrent MIL architectures for WSI analysis:
+## Graphical Abstract
 
-- **EfficientMIL-GRU**: GRU-based recurrent MIL with intelligent patch selection
-- **EfficientMIL-LSTM**: LSTM-based recurrent MIL with attention mechanisms  
-- **EfficientMIL-Mamba**: State space model-based MIL for long sequence modeling
-
-## Key Features
-
-- Multiple recurrent MIL architectures for WSI analysis
-- Intelligent patces selection (APS) with hybrid strategies
-- Cross-validation and train/valid evaluation schemes
-- Support for multiple datasets (TCGA, Camelyon16, custom datasets)
-- Comprehensive visualization tools for WSI patch analysis
-- TensorBoard integration for experiment tracking and visualization
-- Flexible model parameter configuration via JSON
-- Complete preprocessing pipeline for WSI feature extraction
-- Batch processing capabilities for large-scale analysis
+![](imgs/graphical_abstract.png)
 
 ## Installation
 
