@@ -297,12 +297,22 @@ python visualization.py \
 
 This codebase is built on the work of [Snuffy](https://github.com/jafarinia/snuffy), [dsmil-wsi](https://github.com/binli123/dsmil-wsi), [PrePATH](https://github.com/birkhoffkiki/PrePATH), [Vim](https://github.com/hustvl/Vim)
 
-## Citation
+## Preprint and Citation
 
 If you use this code in your research, please cite:
 
+Our preprint is avaible on [arXiv](https://arxiv.org/abs/2509.23640) with the following citation:
+
 ```bibtex
-coming soon
+@misc{she2025_efficientmil,
+      title={EfficientMIL: Efficient Linear-Complexity MIL Method for WSI Classification}, 
+      author={Chengying She and Chengwei Chen and Dongjie Fan and Lizhuang Liu and Chengwei Shao and Yun Bian and Ben Wang and Xinran Zhang},
+      year={2025},
+      eprint={2509.23640},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2509.23640}, 
+}
 ```
 
 
