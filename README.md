@@ -22,7 +22,7 @@ git clone https://github.com/chengyingshe/EfficientMIL.git
 cd EfficientMIL
 
 # Optional: create Anaconda env
-conda create -n efficientmil python=3.9 -y
+conda create -n efficientmil python=3.10 -y
 conda activate efficientmil
 
 # Install mamba
@@ -82,6 +82,8 @@ datasets/mydatasets/YourDataset/
 ### Step 2: Preprocess WSI Images
 
 The preprocessing pipeline consists of two main steps: patch creation and feature extraction.
+
+> **The code are copied from [CLAM](https://github.com/mahmoodlab/CLAM).**
 
 #### 2.1 Create Patches from WSI
 
@@ -295,11 +297,13 @@ python visualization.py \
 
 ## Acknowledgement
 
-This codebase is built on the work of [Snuffy](https://github.com/jafarinia/snuffy), [dsmil-wsi](https://github.com/binli123/dsmil-wsi), [PrePATH](https://github.com/birkhoffkiki/PrePATH), [Vim](https://github.com/hustvl/Vim)
+- [Snuffy](https://github.com/jafarinia/snuffy)
+- [dsmil-wsi](https://github.com/binli123/dsmil-wsi)
+- [PrePATH](https://github.com/birkhoffkiki/PrePATH)
+- [CLAM](https://github.com/mahmoodlab/CLAM)
+- [Mamba](https://github.com/state-spaces/mamba)
 
 ## Preprint and Citation
-
-If you use this code in your research, please cite:
 
 Our preprint is avaible on [arXiv](https://arxiv.org/abs/2509.23640) with the following citation:
 
